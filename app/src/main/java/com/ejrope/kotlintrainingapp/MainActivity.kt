@@ -17,5 +17,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val item = Item()
+        item.title = "Title"
+        val title = item.title
     }
 }
