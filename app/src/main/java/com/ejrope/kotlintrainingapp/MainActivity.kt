@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         val item = Item("title", "url")
 
+        val (title, url) = item
+
         //lambda
         button.setOnClickListener { toast(editText.text) }
     }
