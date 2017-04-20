@@ -1,8 +1,5 @@
 package com.ejrope.kotlintrainingapp
 
-class Item(title: String, url: String) {
+class Item(var title: String, val url: String) {
 
-    var title: String = title
-
-    val url: String = url
 }
