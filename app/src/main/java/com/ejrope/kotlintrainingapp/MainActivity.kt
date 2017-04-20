@@ -1,9 +1,7 @@
 package com.ejrope.kotlintrainingapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         //lambda
         button.setOnClickListener {
             val text = editText.text
-            Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+            toast(text)
         }
     }
 }
