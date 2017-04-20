@@ -17,14 +17,5 @@ class MainActivity : AppCompatActivity() {
             val text = editText.text
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
-
-        //no lambda -> convert to lambda
-        button.setOnClickListener {
-            View.OnClickListener {
-                val text = editText.text
-                Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
-            }
-        }
-
     }
 }
