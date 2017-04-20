@@ -1,14 +1,8 @@
 package com.ejrope.kotlintrainingapp
 
-class Item {
+class Item(title: String, url: String) {
 
-    var title: String = ""
-        get() {
-            return "title: $field"
-        }
-        set(value) {
-            field = "title: $value"
-        }
+    var title: String = title
 
-    var url: String = ""
+    val url: String = url
 }
