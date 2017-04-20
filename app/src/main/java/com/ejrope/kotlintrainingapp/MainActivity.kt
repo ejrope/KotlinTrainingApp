@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val items = listOf(Item("title1","url1"), Item("title2","url2"))
 
-        val result: List<String> = items
+        val result = items
                 .sortedBy(Item::title)
                 .filter { it.url.isNotEmpty() }
                 .map(Item::title)
