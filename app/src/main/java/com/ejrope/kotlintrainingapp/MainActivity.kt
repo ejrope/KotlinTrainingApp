@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener { toast(editText.text) }
 
         val items = listOf(Item("title1","url1"), Item("title2","url2"))
+        val empty = emptyList<Item>()
     }
 }
