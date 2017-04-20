@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
 
-        button.setText("hello")
+        //button.setText("hello")
+        button.text = "hello"
     }
 }
