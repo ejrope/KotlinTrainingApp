@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val item = Item("title", "url")
+
         //lambda
         button.setOnClickListener { toast(editText.text) }
     }
