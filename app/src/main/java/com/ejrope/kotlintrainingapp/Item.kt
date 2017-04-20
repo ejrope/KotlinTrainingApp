@@ -9,6 +9,6 @@ class Item {
         set(value) {
             field = "title: $value"
         }
-    
+
     var url: String = ""
 }
