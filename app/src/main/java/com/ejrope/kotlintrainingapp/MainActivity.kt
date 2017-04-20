@@ -12,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //lambda
-        button.setOnClickListener { toast(editText.text, Toast.LENGTH_LONG) }
+        button.setOnClickListener { toast(editText.text) }
     }
 }
