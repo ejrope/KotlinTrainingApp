@@ -2,6 +2,7 @@ package com.ejrope.kotlintrainingapp
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //lambda
-        button.setOnClickListener { toast(editText.text) }
+        button.setOnClickListener { toast(editText.text, Toast.LENGTH_LONG) }
     }
 }
