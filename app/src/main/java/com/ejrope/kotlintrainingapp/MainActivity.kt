@@ -10,12 +10,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val item = Item("title", "url")
-
-        val (title, _) = item
-
-        //lambda
         button.setOnClickListener { toast(editText.text) }
+
+        val items = listOf(Item("title1","url1"), Item("title2","url2"))
     }
 }
