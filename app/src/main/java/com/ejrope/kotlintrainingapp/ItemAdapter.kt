@@ -13,9 +13,10 @@ class ItemAdapter(val items: List<Item>, val listener: (Item) -> Unit) : Recycle
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = with(holder.itemView) {
-        item_title.text = items[position].title
-        item_image.loadUrl(items[position].url)
-        setOnClickListener { listener(items[position]) }
+        val item = items[position]
+        item_title.text = item.title
+        item_image.loadUrl(item.url)
+        setOnClickListener { listener(item) }
     }
 
     override fun getItemCount() = items.size
