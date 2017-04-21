@@ -16,5 +16,6 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         val id = intent.getLongExtra(EXTRA_ID, -1)
+        val item = getItems().firstOrNull { it.id == id }
     }
 }
