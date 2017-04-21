@@ -1,3 +1,3 @@
 package com.ejrope.kotlintrainingapp
 
-data class Item(var title: String, val url: String)
+data class Item(val title: String, val url: String)
