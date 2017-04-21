@@ -6,10 +6,10 @@ import android.view.ViewGroup
 
 class ItemAdapter() : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
     }
 
-    override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
     }
 
     override fun getItemCount(): Int {
