@@ -12,9 +12,7 @@ class ItemAdapter(val items: List<Item>) : RecyclerView.Adapter<ItemAdapter.View
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
     }
 
-    override fun getItemCount(): Int {
-        return items.size
-    }
+    override fun getItemCount(): Int = items.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
