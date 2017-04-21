@@ -1,5 +1,6 @@
 package com.ejrope.kotlintrainingapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         recycler.layoutManager = GridLayoutManager(this, 2)
-        recycler.adapter = ItemAdapter(getItems())
+        recycler.adapter = ItemAdapter(getItems()) { item ->
+            //Block to define last parameter (item)
+        }
     }
 }
